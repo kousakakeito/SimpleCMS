@@ -7,6 +7,63 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## 開発環境
+
+- **WSL2,Ubuntu(v22.04)**
+- **Docker(v4.28.0)**
+- **LaravelSail(v1.26),LaravelBreeze(v2.0)**
+- **CKEditor(v41.2.1)**
+
+Ubuntu環境でLaravelSailを使用してDockerを利用し、アカウント登録や認証にLaravelBreezeを使用しております。またWYSIWYGエディタはCKEditorを利用しております。
+
+## ビューファイル
+
+- **authディレクトリ**
+認証画面に用いています。
+- **dashboardディレクトリ**
+管理画面に用いています。
+- **usersディレクトリ**
+フロント画面に用いています。
+
+## コントローラーファイル
+
+- **AuthController.php**
+認証画面に用いています。
+- **DashController.php**
+管理画面に用いています。
+- **FrontController.php**
+フロント画面に用いています。
+
+## マイグレーションファイル
+
+- **usersテーブル**
+- **sessionsテーブル**
+- **categoriesテーブル**
+ユーザー名、カテゴリ名、カテゴリ説明のカラムを定義
+- **noticesテーブル**
+ユーザー名、投稿日、タイトル、本文、イメージ画像、表示フラグのカラムを定義
+- **contactsテーブル**
+ユーザー名(url末尾を参照)、名前、メールアドレス、件名、本文のカラムを定義
+
+## モデルファイル
+
+- **User.php**
+- **Category.php**
+カテゴリデータの登録、編集、削除、取得
+- **Notice.php**
+お知らせデータの登録、編集、削除、取得
+- **Contact.php**
+お問い合わせデータの登録、取得
+
+
+
+
+
+
+
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
